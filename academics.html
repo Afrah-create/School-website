@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <script src="https://kit.fontawesome.com/a193030659.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .couresal-container{
+            max-width: 1000px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .couresal-slide{
+            width: 100%;
+            display: flex;
+            height: 500px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .couresal-slide img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .prev-btn, .next-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: aliceblue;
+            border: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .prev-btn{
+            left: 10px;
+        }
+        .next-btn{
+            right: 10px;
+        }
+        .prev-btn:hover, .next-btn:hover{
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="couresal-container">
+        <div class="couresal-slide">
+            <img src="/images/activity1.jpg" alt="">
+            <img src="/images/activity2.jpg" alt="">
+            <img src="/images/activity3.jpg" alt="">
+            <img src="/images/administration.jpg" alt="">
+        </div>
+        <i class="fa-solid fa-forward next-btn"></i>
+        <i class="fa-solid fa-backward prev-btn"></i>
+    </div>
+    <script src="couresal.js" defer></script>
+</body>
+</html>
